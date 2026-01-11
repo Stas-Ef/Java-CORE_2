@@ -17,6 +17,7 @@ class JavaQuestionServiceTest {
         assertThrows(NoSuchElementException.class, service::getRandomQuestion);
     }
 
+
     @Test
     void addDuplicate_onlyOneStored() {
         service.add("Q", "A");

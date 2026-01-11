@@ -11,6 +11,7 @@ public class JavaQuestionService implements QuestionService {
     private final Set<Question> questions = new HashSet<>();
     private final Random random = new Random();
 
+
     @Override
     public Question add(String question, String answer) {
         return add(new Question(question, answer));
