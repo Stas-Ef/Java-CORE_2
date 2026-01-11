@@ -19,6 +19,7 @@ class ExaminerServiceImplTest {
         QuestionService service = Mockito.mock(QuestionService.class);
         when(service.getAll()).thenReturn(Set.of());
 
+
         ExaminerService examiner = new ExaminerServiceImpl(service);
         assertTrue(examiner.getQuestions(0).isEmpty());
     }
