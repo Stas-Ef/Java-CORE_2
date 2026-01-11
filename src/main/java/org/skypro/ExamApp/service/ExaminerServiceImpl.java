@@ -23,7 +23,7 @@ public class ExaminerServiceImpl implements ExaminerService {
         if (amount > questionService.getAll().size()) {
             throw new ResponseStatusException(
                     HttpStatus.BAD_REQUEST,
-                    "Недостаточно вопросов"
+                    "В базе недостаточно вопросов"
             );
         }
 
